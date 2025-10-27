@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Local custom font: Avenir Arabic (Medium) */
+@font-face {
+  font-family: 'Avenir Arabic';
+  src: url('/src/fonts/AVENIRARABIC-MEDIUM.OTF') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
@@ -49,11 +58,18 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground;
     direction: rtl;
+    /* Use the local Avenir Arabic font, fall back to existing Google fonts */
+    font-family: 'Avenir Arabic', 'Cairo', 'Tajawal', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   }
 
   html {
     direction: rtl;
   }
+}
+
+/* Enable smooth scrolling for in-page anchors */
+html {
+  scroll-behavior: smooth;
 }

@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Clock, BookOpen, Users } from "lucide-react";
-import robotHero from "@/assets/robot-hero.png";
+import courseRobot from "@/assets/1 (1).png";
 
 const Courses = () => {
   const courses = [
@@ -20,7 +20,7 @@ const Courses = () => {
       description: "تعرف عملي للمراهقين على لغة بايثون عبر مشاريع ممتعة: كتابة الحكايات والحلوال. مع تجهيز لطاليب للإنتقال لأدوات متقدمة في الذكاء الاصطناعي وعلوم البيانات وتعزيز التفكير المنطقي والاستقلالية."
     },
     {
-      title: "مغامرة البرمجة والذكاء الاصطناعي مع PictoBlox",
+      title: "مغامرة ريادة الأعمال للطفل الصغير",
       sessions: "12 حصة",
       duration: "120 دقيقة / حصة",
       age: "8 - 11 سنة",
@@ -64,7 +64,13 @@ const Courses = () => {
                 {course.description}
               </p>
 
-              <Button className="w-full rounded-full font-bold bg-accent hover:bg-accent/90">
+              <Button
+                className="w-full rounded-full font-bold bg-accent hover:bg-accent/90"
+                onClick={() => {
+                  const el = document.getElementById("contact-info") || document.getElementById("register-now-btn");
+                  if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+                }}
+              >
                 المزيد عن المستوى
               </Button>
             </Card>
@@ -74,9 +80,9 @@ const Courses = () => {
         <Card className="bg-card p-8 md:p-12 rounded-[2rem] shadow-xl max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <img 
-                src={robotHero} 
-                alt="Robot with Laptop" 
+              <img
+                src={courseRobot}
+                alt="Robot with Laptop"
                 className="w-full max-w-xs mx-auto drop-shadow-2xl"
               />
             </div>
@@ -105,7 +111,13 @@ const Courses = () => {
                 تجربة ممزجة لتعليم البرمجة للأطفال: تصميم تطبيقات تفاعلية، تحريك شخصيات وبرمجة ألعاب. مع تركيز على الإبداع، وبناء مشاريع يمكدها الطفل بفخر أمام أهله.
               </p>
 
-              <Button className="w-full md:w-auto rounded-full font-bold bg-accent hover:bg-accent/90 px-12">
+              <Button
+                className="w-full md:w-auto rounded-full font-bold bg-accent hover:bg-accent/90 px-12"
+                onClick={() => {
+                  const el = document.getElementById("contact-info") || document.getElementById("register-now-btn");
+                  if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+                }}
+              >
                 المزيد عن المستوى
               </Button>
             </div>

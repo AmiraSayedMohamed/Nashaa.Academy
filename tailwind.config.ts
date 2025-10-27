@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Cairo', 'Tajawal', 'sans-serif'],
+        // include the local Avenir Arabic font first, then fallbacks
+        sans: ['Avenir Arabic', 'Cairo', 'Tajawal', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

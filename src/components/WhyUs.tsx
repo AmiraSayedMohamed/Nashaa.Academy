@@ -17,7 +17,7 @@ const WhyUs = () => {
   ];
 
   return (
-    <section className="py-20 bg-background relative">
+    <section id="whyus" className="py-20 bg-background relative">
       <div className="absolute top-0 left-0 w-32 h-32 bg-primary rounded-full opacity-50"></div>
       <div className="absolute top-20 right-20 w-24 h-24 bg-primary rounded-full opacity-30"></div>
       <div className="absolute bottom-20 left-1/4 w-16 h-16 bg-accent rounded-full opacity-40"></div>

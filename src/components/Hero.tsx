@@ -31,13 +31,18 @@ const Hero = () => {
             </li>
           </ul>
 
-          <div className="flex justify-end">
+          <div className="flex justify-end relative">
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-white font-bold text-xl px-10 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all border-2 border-white"
+              className="bg-primary hover:bg-primary/90 text-white font-bold text-xl px-10 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all border-4 border-accent hover:border-accent/90"
+              onClick={() => {
+                const el = document.getElementById("register-now-btn") || document.getElementById("free-session") || document.getElementById("contact");
+                if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+              }}
             >
               إحجز الحصة المجانية الآن
             </Button>
+            
           </div>
         </div>
 
@@ -48,8 +53,9 @@ const Hero = () => {
               alt="Robot Mascot" 
               className="w-full max-w-[400px] mx-auto drop-shadow-2xl animate-float"
             />
-            <Rocket className="absolute -top-4 -right-8 text-accent w-20 h-20 animate-bounce" style={{ fill: '#FF9B50' }} />
-            <Lightbulb className="absolute top-1/3 left-8 text-accent w-20 h-20 animate-pulse" />
+            {/* nudge rocket slightly left (less offset) and move lightbulb slightly right */}
+            <Rocket className="absolute -top-4 -left-4 text-accent w-20 h-20 animate-bounce" style={{ fill: '#FF9B50' }} />
+            <Lightbulb className="absolute top-16 left-31 text-accent w-20 h-20 animate-pulse" />
           </div>
         </div>
       </div>

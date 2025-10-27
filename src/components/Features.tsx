@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import robotHero from "@/assets/robot-hero.png";
+import robotWelcome from "@/assets/robot-welcome.png";
 
 const Features = () => {
   const features = [
@@ -30,9 +30,9 @@ const Features = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div className="order-2 md:order-1">
-            <img 
-              src={robotHero} 
-              alt="Robot Teaching" 
+            <img
+              src={robotWelcome}
+              alt="Robot Teaching"
               className="w-full max-w-sm mx-auto drop-shadow-2xl animate-float"
             />
           </div>
