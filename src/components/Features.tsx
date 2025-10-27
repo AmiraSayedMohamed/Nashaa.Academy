@@ -23,7 +23,7 @@ const Features = () => {
         clipPath: "ellipse(100% 100% at 50% 0%)"
       }}></div>
 
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 relative z-10">
         <h2 className="text-5xl font-bold text-center text-primary mb-16">
           ماذا نقدم لأطفالكم؟
         </h2>
@@ -41,7 +41,7 @@ const Features = () => {
             {features.map((feature, index) => (
               <Card 
                 key={index}
-                className="bg-primary text-primary-foreground p-8 rounded-[2rem] shadow-lg hover:shadow-xl transition-all"
+                className="bg-primary text-white p-8 rounded-[2rem] shadow-lg hover:shadow-xl transition-all"
               >
                 <h3 className="text-2xl font-bold mb-4">{feature.title}</h3>
                 <p className="leading-relaxed text-lg">{feature.description}</p>
