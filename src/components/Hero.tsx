@@ -6,19 +6,7 @@ const Hero = () => {
   return (
     <section className="bg-primary relative overflow-hidden min-h-[600px]">
       <div className="container mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
-        <div className="relative z-10 order-2 md:order-1 flex items-center justify-center">
-          <div className="relative">
-            <img 
-              src={robotHero} 
-              alt="Robot Mascot" 
-              className="w-full max-w-[400px] mx-auto drop-shadow-2xl animate-float"
-            />
-            <Rocket className="absolute top-8 left-4 text-primary w-16 h-16 opacity-60 animate-bounce" />
-            <Lightbulb className="absolute top-1/3 right-8 text-accent w-20 h-20 animate-pulse" />
-          </div>
-        </div>
-
-        <div className="text-white space-y-8 order-1 md:order-2">
+        <div className="text-white space-y-8 order-2 md:order-1">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight text-right">
             <span className="block text-primary-foreground">نزرع فضـــولهـــم</span>
             <span className="block bg-primary text-white px-10 py-4 rounded-full mt-4 inline-block text-3xl md:text-4xl shadow-lg">
@@ -48,6 +36,18 @@ const Hero = () => {
             >
               إحجز الحصة المجانية الآن
             </Button>
+          </div>
+        </div>
+
+        <div className="relative z-10 order-1 md:order-2 flex items-center justify-center">
+          <div className="relative">
+            <img 
+              src={robotHero} 
+              alt="Robot Mascot" 
+              className="w-full max-w-[400px] mx-auto drop-shadow-2xl animate-float"
+            />
+            <Rocket className="absolute top-8 left-4 text-primary w-16 h-16 opacity-60 animate-bounce" />
+            <Lightbulb className="absolute top-1/3 right-8 text-accent w-20 h-20 animate-pulse" />
           </div>
         </div>
       </div>
