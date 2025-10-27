@@ -8,8 +8,10 @@ const Hero = () => {
       <div className="container mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
         <div className="text-white space-y-8 order-2 md:order-1">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight text-right">
-            <span className="block text-primary-foreground">نزرع فضـــولهـــم</span>
-            <span className="block bg-primary text-white px-10 py-4 rounded-full mt-4 inline-block text-3xl md:text-4xl shadow-lg">
+            <span className="block text-white">
+              نزرع فضول<span className="text-accent">هـــم</span>
+            </span>
+            <span className="block bg-white text-primary px-10 py-4 rounded-full mt-4 inline-block text-3xl md:text-4xl shadow-lg">
               ينمو إبداعهــــم
             </span>
           </h1>
@@ -46,8 +48,8 @@ const Hero = () => {
               alt="Robot Mascot" 
               className="w-full max-w-[400px] mx-auto drop-shadow-2xl animate-float"
             />
-            <Rocket className="absolute top-8 left-4 text-primary w-16 h-16 opacity-60 animate-bounce" />
-            <Lightbulb className="absolute top-1/3 right-8 text-accent w-20 h-20 animate-pulse" />
+            <Rocket className="absolute -top-4 -right-8 text-accent w-20 h-20 animate-bounce" style={{ fill: '#FF9B50' }} />
+            <Lightbulb className="absolute top-1/3 left-8 text-accent w-20 h-20 animate-pulse" />
           </div>
         </div>
       </div>
