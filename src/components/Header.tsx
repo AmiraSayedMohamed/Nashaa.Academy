@@ -6,15 +6,15 @@ const Header = () => {
     <header className="bg-primary py-4 px-6 rounded-b-[3rem]">
       <nav className="container mx-auto flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <Button variant="secondary" className="rounded-full font-bold">
+          <Button className="rounded-full font-bold bg-white text-primary hover:bg-white/90">
             تواصل معنا
           </Button>
-          <Button variant="outline" className="rounded-full font-bold bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary">
+          <Button className="rounded-full font-bold bg-transparent text-white border-2 border-white hover:bg-white hover:text-primary">
             سجل الدخول
           </Button>
         </div>
 
-        <ul className="hidden md:flex items-center gap-6 text-primary-foreground font-semibold">
+        <ul className="hidden md:flex items-center gap-6 text-white font-semibold">
           <li>
             <a href="#courses" className="hover:opacity-80 transition-opacity">
               مسارات التعلم

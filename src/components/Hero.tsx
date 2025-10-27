@@ -4,47 +4,51 @@ import { Lightbulb, Rocket } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="bg-primary relative overflow-hidden">
-      <div className="container mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
-        <div className="relative z-10 order-2 md:order-1">
-          <img 
-            src={robotHero} 
-            alt="Robot Mascot" 
-            className="w-full max-w-md mx-auto drop-shadow-2xl animate-float"
-          />
-          <Rocket className="absolute top-10 left-10 text-accent w-12 h-12 animate-bounce" />
-          <Lightbulb className="absolute bottom-20 right-10 text-accent w-16 h-16 animate-pulse" />
+    <section className="bg-primary relative overflow-hidden min-h-[600px]">
+      <div className="container mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
+        <div className="relative z-10 order-2 md:order-1 flex items-center justify-center">
+          <div className="relative">
+            <img 
+              src={robotHero} 
+              alt="Robot Mascot" 
+              className="w-full max-w-[400px] mx-auto drop-shadow-2xl animate-float"
+            />
+            <Rocket className="absolute top-8 left-4 text-primary w-16 h-16 opacity-60 animate-bounce" />
+            <Lightbulb className="absolute top-1/3 right-8 text-accent w-20 h-20 animate-pulse" />
+          </div>
         </div>
 
-        <div className="text-primary-foreground space-y-6 order-1 md:order-2">
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-            نزرع فضـــولهـــم
-            <span className="block bg-secondary text-primary px-8 py-3 rounded-full mt-4 inline-block">
+        <div className="text-white space-y-8 order-1 md:order-2">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-right">
+            <span className="block text-primary-foreground">نزرع فضـــولهـــم</span>
+            <span className="block bg-primary text-white px-10 py-4 rounded-full mt-4 inline-block text-3xl md:text-4xl shadow-lg">
               ينمو إبداعهــــم
             </span>
           </h1>
 
-          <ul className="space-y-4 text-lg">
-            <li className="flex items-start gap-3">
-              <span className="text-accent text-2xl">•</span>
-              <span>مناهج عملية بمشروعات يخرج بها الطفل portfolio حقيقي.</span>
+          <ul className="space-y-5 text-lg text-white">
+            <li className="flex items-start gap-3 text-right">
+              <span className="text-primary-foreground text-2xl">•</span>
+              <span className="text-white">مناهج عملية بمشروعات يخرج بها الطفل portfolio حقيقي.</span>
             </li>
-            <li className="flex items-start gap-3">
-              <span className="text-accent text-2xl">•</span>
-              <span>مسار متدرج يجمع برمجة، ذكاء اصطناعي وريادة أعمال.</span>
+            <li className="flex items-start gap-3 text-right">
+              <span className="text-primary-foreground text-2xl">•</span>
+              <span className="text-white">مسار متدرج يجمع برمجة، ذكاء اصطناعي وريادة أعمال.</span>
             </li>
-            <li className="flex items-start gap-3">
-              <span className="text-accent text-2xl">•</span>
-              <span>متابعة فردية وتقييم مستمر لكل طالب.</span>
+            <li className="flex items-start gap-3 text-right">
+              <span className="text-primary-foreground text-2xl">•</span>
+              <span className="text-white">متابعة فردية وتقييم مستمر لكل طالب.</span>
             </li>
           </ul>
 
-          <Button 
-            size="lg" 
-            className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-xl px-12 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
-          >
-            إحجز الحصة المجانية الآن
-          </Button>
+          <div className="flex justify-end">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-white font-bold text-xl px-10 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all border-2 border-white"
+            >
+              إحجز الحصة المجانية الآن
+            </Button>
+          </div>
         </div>
       </div>
 
