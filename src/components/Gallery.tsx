@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-import img3a from "@/assets/3 (1).png";
+import img3a from "@/assets/3-1.png";
 import img3 from "@/assets/3.png";
-import img4a from "@/assets/4 (1).png";
+import img4a from "@/assets/4-1.png";
 import img4 from "@/assets/4.png";
-import img5a from "@/assets/5 (1).png";
+import img5a from "@/assets/5-1.png";
 import img5 from "@/assets/5.png";
 
 const Gallery = () => {

@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Clock, BookOpen, Users } from "lucide-react";
-import courseRobot from "@/assets/1 (1).png";
+import courseRobot from "@/assets/1-1.png";
 
 const Courses = () => {
   const courses = [
